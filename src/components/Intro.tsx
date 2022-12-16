@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
-import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
+import { Button, IconButton, Stack, Typography } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ArticleIcon from '@mui/icons-material/Article';
 
 const Intro: React.FC = () => {
   return (
@@ -11,7 +13,20 @@ const Intro: React.FC = () => {
       justifyContent="center"
     >
       <Typography variant="h2">Eric Velepucha</Typography>
-      <Typography variant="h4">Bottom text</Typography>
+      <Typography variant="h6">I'm a software engineer that likes to build full stack web applications</Typography>
+      <Stack direction="row">
+        <IconButton target="_blank" href="https://www.linkedin.com/in/eric-vele/">
+          <LinkedInIcon fontSize="large" />
+        </IconButton>
+        <IconButton target="_blank" href="https://github.com/ericv105">
+          <GitHubIcon fontSize="large" />
+        </IconButton>
+      </Stack>
+      <Button target="_blank" variant="contained" sx={{borderRadius: 5}} endIcon={<ArticleIcon/>} href="/Resume.pdf">
+        <Typography variant="button" sx={{textTransform: 'none'}}>
+          Resume
+        </Typography>
+      </Button>
     </Stack>
   );
 };

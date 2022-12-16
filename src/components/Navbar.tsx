@@ -3,7 +3,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import {
   AppBar,
   Box,
-  Container,
   Toolbar,
   Typography,
   Button,
@@ -11,7 +10,6 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import { linkSync } from "fs";
 
 const Navbar: React.FC = () => {
   const links = ["About me", "Projects", "Skills", "Resume", "Contact"];
