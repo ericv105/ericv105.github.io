@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
                 ))}
               </Menu>
             </Box>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: 'center' }}>
               {links.map((link) => (
                 <Button
                   key={link}
