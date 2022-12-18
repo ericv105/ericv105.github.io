@@ -1,24 +1,27 @@
 import "./App.css";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 
 const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
   },
   typography: {
-    fontFamily: 'Montserrat'
-  }
+    fontFamily: "Montserrat",
+  },
 });
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <CssBaseline />
+        {/* enableColorScheme for dark scroll bar */}
+        <CssBaseline enableColorScheme /> 
         <Navbar />
         <Intro />
+        <Projects />
       </ThemeProvider>
     </div>
   );

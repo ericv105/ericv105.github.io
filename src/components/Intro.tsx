@@ -12,8 +12,8 @@ const Intro: React.FC = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Typography variant="h2">Eric Velepucha</Typography>
-      <Typography variant="h6">I'm a software engineer that likes to build full stack web applications</Typography>
+      <Typography variant="h2" align="center">Eric Velepucha</Typography>
+      <Typography variant="h6" align="center">I'm a software engineer that likes to build full stack web applications</Typography>
       <Stack direction="row">
         <IconButton target="_blank" href="https://www.linkedin.com/in/eric-vele/">
           <LinkedInIcon fontSize="large" />
