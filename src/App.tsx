@@ -2,6 +2,7 @@ import "./App.css";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import About from "./components/About";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 
 const theme = createTheme({
@@ -18,9 +19,10 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         {/* enableColorScheme for dark scroll bar */}
-        <CssBaseline enableColorScheme /> 
+        <CssBaseline enableColorScheme />
         <Navbar />
         <Intro />
+        <About />
         <Projects />
       </ThemeProvider>
     </div>
