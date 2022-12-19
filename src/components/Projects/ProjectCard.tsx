@@ -17,7 +17,7 @@ interface ProjCardProps {
   projDesc?: string;
   githubLink: string;
   liveLink?: string;
-  techs: string[]
+  techs: string[];
 }
 
 const ProjectCard: React.FC<ProjCardProps> = ({
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjCardProps> = ({
   techs,
 }) => {
   return (
-    <Card sx={{ maxWidth: 250 }}>
+    <Card sx={{ width: 250 }}>
       <CardMedia
         component="img"
         height="141"
@@ -37,11 +37,9 @@ const ProjectCard: React.FC<ProjCardProps> = ({
         alt="Project ss"
       />
       <CardContent>
-        {
-          techs.map((tech) => (
-            <TechChip techName={tech}/>
-          ))
-        }
+        {techs.map((tech) => (
+          <TechChip techName={tech} />
+        ))}
         <Typography variant="h5">{projTitle}</Typography>
         <Typography variant="body2">{projDesc}</Typography>
         <Stack direction="row">

@@ -1,5 +1,6 @@
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link as ScrollLink } from "react-scroll";
 import {
   AppBar,
   Box,
@@ -57,7 +58,9 @@ const Navbar: React.FC = () => {
             >
               {links.map((link) => (
                 <MenuItem key={link} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{link}</Typography>
+                  <ScrollLink to={link.toLowerCase()} spy={true} smooth={true}>
+                    <Typography textAlign="center">{link}</Typography>
+                  </ScrollLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -74,7 +77,9 @@ const Navbar: React.FC = () => {
                 key={link}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {link}
+                <ScrollLink to={link.toLowerCase()} spy={true} smooth={true}>
+                  {link}
+                </ScrollLink>
               </Button>
             ))}
           </Box>
