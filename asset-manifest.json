@@ -1,12 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.5f72b53d.js",
+    "main.js": "/static/js/main.d31997a6.js",
+    "static/media/big-little-matcher-ss.png": "/static/media/big-little-matcher-ss.5a297f029cb72bf4d6a0.png",
+    "static/media/portfolio-ss.png": "/static/media/portfolio-ss.43abdae8d0d435a8dc4d.png",
+    "static/media/ScrumHub.png": "/static/media/ScrumHub.15a173576eaf9796ec58.png",
     "index.html": "/index.html",
-    "main.5f72b53d.js.map": "/static/js/main.5f72b53d.js.map"
+    "main.d31997a6.js.map": "/static/js/main.d31997a6.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.5f72b53d.js"
+    "static/js/main.d31997a6.js"
   ]
 }
